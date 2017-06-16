@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="amimarketaplikasi.Method">
+  <ClassDiagramComponents>
+    <Class name="ReportControl" package="amimarketaplikasi.Method" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="con" type="Connection" visibility="package"/>
+        <Field name="st" type="Statement" visibility="package"/>
+        <Field name="rs" type="ResultSet" visibility="package"/>
+        <Field name="sql" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cetakSeleruhBarang" returnType="void" visibility="public"/>
+        <Method name="cetakPerSatuan" returnType="void" visibility="public">
+          <Argument type="String" name="satuan"/>
+        </Method>
+        <Method name="cetakNota" returnType="void" visibility="public">
+          <Argument type="String" name="nonota"/>
+        </Method>
+        <Method name="laporanHarian" returnType="void" visibility="public"/>
+        <Method name="laporanHarian2" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="BeliControl" package="amimarketaplikasi.Method" visibility="public" xPosition="435.0" yPosition="20.0">
+      <Fields>
+        <Field name="con" type="Connection" visibility="package"/>
+        <Field name="st" type="Statement" visibility="package"/>
+        <Field name="rs" type="ResultSet" visibility="package"/>
+        <Field name="sql" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="tampil" returnType="List" visibility="public"/>
+        <Method name="tambahBeli" returnType="int" visibility="public">
+          <Argument type="EntitasBeli" name="e"/>
+        </Method>
+        <Method name="deleteBeli" returnType="int" visibility="public">
+          <Argument type="EntitasBeli" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="KasirControl" package="amimarketaplikasi.Method" visibility="public" xPosition="813.0" yPosition="20.0">
+      <Fields>
+        <Field name="con" type="Connection" visibility="package"/>
+        <Field name="st" type="Statement" visibility="package"/>
+        <Field name="rs" type="ResultSet" visibility="package"/>
+        <Field name="sql" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cariLogin" returnType="List" visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="String" name="password"/>
+        </Method>
+        <Method name="tampil" returnType="List" visibility="public"/>
+        <Method name="cariKasir" returnType="List" visibility="public">
+          <Argument type="String" name="cari"/>
+        </Method>
+        <Method name="cariKasirDenganId" returnType="List" visibility="public">
+          <Argument type="String" name="id_kasir"/>
+        </Method>
+        <Method name="tambahKasir" returnType="int" visibility="public">
+          <Argument type="EntitasKasir" name="e"/>
+        </Method>
+        <Method name="deleteKasir" returnType="int" visibility="public">
+          <Argument type="EntitasKasir" name="e"/>
+        </Method>
+        <Method name="editKasir" returnType="int" visibility="public">
+          <Argument type="EntitasKasir" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PemasokControl" package="amimarketaplikasi.Method" visibility="public" xPosition="20.0" yPosition="352.0">
+      <Fields>
+        <Field name="con" type="Connection" visibility="package"/>
+        <Field name="st" type="Statement" visibility="package"/>
+        <Field name="rs" type="ResultSet" visibility="package"/>
+        <Field name="sql" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="tampil" returnType="List" visibility="public"/>
+        <Method name="cariPemasok" returnType="List" visibility="public">
+          <Argument type="String" name="cari"/>
+        </Method>
+        <Method name="cariPemasokDenganId" returnType="List" visibility="public">
+          <Argument type="String" name="id_pemasok"/>
+        </Method>
+        <Method name="tambahPemasok" returnType="int" visibility="public">
+          <Argument type="EntitasPemasok" name="e"/>
+        </Method>
+        <Method name="deletePemasok" returnType="int" visibility="public">
+          <Argument type="EntitasPemasok" name="e"/>
+        </Method>
+        <Method name="editPemasok" returnType="int" visibility="public">
+          <Argument type="EntitasPemasok" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="BarangControl" package="amimarketaplikasi.Method" visibility="public" xPosition="415.0" yPosition="352.0">
+      <Fields>
+        <Field name="con" type="Connection" visibility="package"/>
+        <Field name="st" type="Statement" visibility="package"/>
+        <Field name="rs" type="ResultSet" visibility="package"/>
+        <Field name="sql" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="tampil" returnType="List" visibility="public"/>
+        <Method name="tampilSatuan" returnType="List" visibility="public"/>
+        <Method name="cariBarang" returnType="List" visibility="public">
+          <Argument type="String" name="cari"/>
+        </Method>
+        <Method name="cariBarangDenganKode" returnType="List" visibility="public">
+          <Argument type="String" name="kdBarang"/>
+        </Method>
+        <Method name="tambahBarang" returnType="int" visibility="public">
+          <Argument type="EntitasBarang" name="e"/>
+        </Method>
+        <Method name="deleteBarang" returnType="int" visibility="public">
+          <Argument type="EntitasBarang" name="e"/>
+        </Method>
+        <Method name="editBarang" returnType="int" visibility="public">
+          <Argument type="EntitasBarang" name="e"/>
+        </Method>
+        <Method name="updateStok" returnType="int" visibility="public">
+          <Argument type="int" name="stok"/>
+          <Argument type="String" name="kdBarang"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DetailBeliControl" package="amimarketaplikasi.Method" visibility="public" xPosition="813.0" yPosition="352.0">
+      <Fields>
+        <Field name="con" type="Connection" visibility="package"/>
+        <Field name="st" type="Statement" visibility="package"/>
+        <Field name="rs" type="ResultSet" visibility="package"/>
+        <Field name="sql" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="tampilBarang" returnType="List" visibility="public">
+          <Argument type="String" name="noNota"/>
+        </Method>
+        <Method name="CekBarang" returnType="List" visibility="public">
+          <Argument type="String" name="noNota"/>
+          <Argument type="String" name="kdBarang"/>
+        </Method>
+        <Method name="tambahDetailBeli" returnType="int" visibility="public">
+          <Argument type="EntitasDetailBeli" name="e"/>
+        </Method>
+        <Method name="deleteDetailBeli" returnType="int" visibility="public">
+          <Argument type="String" name="nonota"/>
+          <Argument type="String" name="kdbarang"/>
+        </Method>
+        <Method name="tampilBarang" returnType="List" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

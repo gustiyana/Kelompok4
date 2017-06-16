@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="amimarketaplikasi.entity">
+  <ClassDiagramComponents>
+    <Class name="EntitasPengguna" package="amimarketaplikasi.entity" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="username" type="String" visibility="package"/>
+        <Field name="idpengguna" type="int" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getHakakses" returnType="String" visibility="public"/>
+        <Method name="setHakakses" returnType="void" visibility="public">
+          <Argument type="String" name="hakakses"/>
+        </Method>
+        <Method name="getIdpengguna" returnType="int" visibility="public"/>
+        <Method name="setIdpengguna" returnType="void" visibility="public">
+          <Argument type="int" name="idpengguna"/>
+        </Method>
+        <Method name="getPassword" returnType="String" visibility="public"/>
+        <Method name="setPassword" returnType="void" visibility="public">
+          <Argument type="String" name="password"/>
+        </Method>
+        <Method name="getUsername" returnType="String" visibility="public"/>
+        <Method name="setUsername" returnType="void" visibility="public">
+          <Argument type="String" name="username"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EntitasPemasok" package="amimarketaplikasi.entity" visibility="public" xPosition="59.0" yPosition="397.0">
+      <Fields>
+        <Field name="id_pemasok" type="String" visibility="public"/>
+        <Field name="jumlah_barang" type="int" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getId_pemasok" returnType="String" visibility="public"/>
+        <Method name="setId_pemasok" returnType="void" visibility="public">
+          <Argument type="String" name="id_pemasok"/>
+        </Method>
+        <Method name="getNama_pemasok" returnType="String" visibility="public"/>
+        <Method name="setNama_pemasok" returnType="void" visibility="public">
+          <Argument type="String" name="nama_pemasok"/>
+        </Method>
+        <Method name="getAlamat_pemasok" returnType="String" visibility="public"/>
+        <Method name="setAlamat_pemasok" returnType="void" visibility="public">
+          <Argument type="String" name="alamat_pemasok"/>
+        </Method>
+        <Method name="getNama_barang" returnType="String" visibility="public"/>
+        <Method name="setNama_barang" returnType="void" visibility="public">
+          <Argument type="String" name="nama_barang"/>
+        </Method>
+        <Method name="getJumlah_barang" returnType="int" visibility="public"/>
+        <Method name="setJumlah_barang" returnType="void" visibility="public">
+          <Argument type="int" name="jumlah_barang"/>
+        </Method>
+        <Method name="getNo_telepon" returnType="int" visibility="public"/>
+        <Method name="setNo_telepon" returnType="void" visibility="public">
+          <Argument type="int" name="no_telepon"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EntitasBeli" package="amimarketaplikasi.entity" visibility="public" xPosition="324.0" yPosition="20.0">
+      <Fields>
+        <Field name="nonota" type="String" visibility="package"/>
+        <Field name="tgl" type="String" visibility="package"/>
+        <Field name="total" type="int" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getTgl" returnType="String" visibility="public"/>
+        <Method name="setTgl" returnType="void" visibility="public">
+          <Argument type="String" name="tgl"/>
+        </Method>
+        <Method name="getBayar" returnType="int" visibility="public"/>
+        <Method name="setBayar" returnType="void" visibility="public">
+          <Argument type="int" name="bayar"/>
+        </Method>
+        <Method name="getKembali" returnType="int" visibility="public"/>
+        <Method name="setKembali" returnType="void" visibility="public">
+          <Argument type="int" name="kembali"/>
+        </Method>
+        <Method name="getNonota" returnType="String" visibility="public"/>
+        <Method name="setNonota" returnType="void" visibility="public">
+          <Argument type="String" name="nonota"/>
+        </Method>
+        <Method name="getPembeli" returnType="String" visibility="public"/>
+        <Method name="setPembeli" returnType="void" visibility="public">
+          <Argument type="String" name="pembeli"/>
+        </Method>
+        <Method name="getTotal" returnType="int" visibility="public"/>
+        <Method name="setTotal" returnType="void" visibility="public">
+          <Argument type="int" name="total"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EntitasKasir" package="amimarketaplikasi.entity" visibility="public" xPosition="615.0" yPosition="40.0">
+      <Fields>
+        <Field name="nama_kasir" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getUsername" returnType="String" visibility="public"/>
+        <Method name="setUsername" returnType="void" visibility="public">
+          <Argument type="String" name="username"/>
+        </Method>
+        <Method name="getPassword" returnType="String" visibility="public"/>
+        <Method name="setPassword" returnType="void" visibility="public">
+          <Argument type="String" name="password"/>
+        </Method>
+        <Method name="getId_kasir" returnType="String" visibility="public"/>
+        <Method name="setId_kasir" returnType="void" visibility="public">
+          <Argument type="String" name="id_kasir"/>
+        </Method>
+        <Method name="getAlamat" returnType="String" visibility="public"/>
+        <Method name="setAlamat" returnType="void" visibility="public">
+          <Argument type="String" name="alamat"/>
+        </Method>
+        <Method name="getNama_kasir" returnType="String" visibility="public"/>
+        <Method name="setNama_kasir" returnType="void" visibility="public">
+          <Argument type="String" name="nama_kasir"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EntitasDetailBeli" package="amimarketaplikasi.entity" visibility="public" xPosition="441.0" yPosition="397.0">
+      <Fields>
+        <Field name="nonota" type="String" visibility="package"/>
+        <Field name="harga" type="int" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getHarga" returnType="int" visibility="public"/>
+        <Method name="setHarga" returnType="void" visibility="public">
+          <Argument type="int" name="harga"/>
+        </Method>
+        <Method name="getJml" returnType="int" visibility="public"/>
+        <Method name="setJml" returnType="void" visibility="public">
+          <Argument type="int" name="jml"/>
+        </Method>
+        <Method name="getKdbarang" returnType="String" visibility="public"/>
+        <Method name="setKdbarang" returnType="void" visibility="public">
+          <Argument type="String" name="kdbarang"/>
+        </Method>
+        <Method name="getNmbarang" returnType="String" visibility="public"/>
+        <Method name="setNmbarang" returnType="void" visibility="public">
+          <Argument type="String" name="nmbarang"/>
+        </Method>
+        <Method name="getNonota" returnType="String" visibility="public"/>
+        <Method name="setNonota" returnType="void" visibility="public">
+          <Argument type="String" name="nonota"/>
+        </Method>
+        <Method name="getTotal" returnType="int" visibility="public"/>
+        <Method name="setTotal" returnType="void" visibility="public">
+          <Argument type="int" name="total"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EntitasBarang" package="amimarketaplikasi.entity" visibility="public" xPosition="740.0" yPosition="397.0">
+      <Fields>
+        <Field name="kdbarang" type="String" visibility="public"/>
+        <Field name="stok" type="int" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getSatuan" returnType="String" visibility="public"/>
+        <Method name="setSatuan" returnType="void" visibility="public">
+          <Argument type="String" name="satuan"/>
+        </Method>
+        <Method name="getHarga" returnType="int" visibility="public"/>
+        <Method name="setHarga" returnType="void" visibility="public">
+          <Argument type="int" name="harga"/>
+        </Method>
+        <Method name="getKdbarang" returnType="String" visibility="public"/>
+        <Method name="setKdbarang" returnType="void" visibility="public">
+          <Argument type="String" name="kdbarang"/>
+        </Method>
+        <Method name="getNmbarang" returnType="String" visibility="public"/>
+        <Method name="setNmbarang" returnType="void" visibility="public">
+          <Argument type="String" name="nmbarang"/>
+        </Method>
+        <Method name="getStok" returnType="int" visibility="public"/>
+        <Method name="setStok" returnType="void" visibility="public">
+          <Argument type="int" name="stok"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

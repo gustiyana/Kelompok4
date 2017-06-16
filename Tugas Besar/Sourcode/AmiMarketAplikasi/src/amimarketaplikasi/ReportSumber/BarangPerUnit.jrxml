@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Barang" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="994d73a7-aa83-4488-aae2-9ad21a2abc70">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="satuan" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     barang.`kdbarang` AS barang_kdbarang,
+     barang.`nmbarang` AS barang_nmbarang,
+     barang.`satuan` AS barang_satuan,
+     barang.`stok` AS barang_stok,
+     barang.`harga` AS barang_harga
+FROM
+     `barang` barang
+where satuan=$P{satuan}]]>
+	</queryString>
+	<field name="barang_kdbarang" class="java.lang.String"/>
+	<field name="barang_nmbarang" class="java.lang.String"/>
+	<field name="barang_satuan" class="java.lang.String"/>
+	<field name="barang_stok" class="java.lang.Integer"/>
+	<field name="barang_harga" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="88" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="66822a80-a9b5-4dfd-b518-4347225a7fe1" x="177" y="5" width="213" height="40"/>
+				<textElement>
+					<font size="30" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Toko FikriAmi Elektronik]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="621240c5-73db-4fc7-baa0-5dd9992f1735" x="114" y="65" width="352" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jl. Raya Jatinangor No.131, Jatinangor Kabupaten Sumedang, Jawa Barat 45363]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a51ba379-cb0f-4be0-be16-11e70ce42fea" x="210" y="44" width="136" height="20" forecolor="#0000FF"/>
+				<textElement>
+					<font size="12" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Melayani Sepenuh Hati]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="b1ebfcee-67e4-4c7d-9171-893bd49c45fd" x="6" y="86" width="549" height="1"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="3019bc65-8bcc-4548-9dd9-0d76c41a031d" x="205" y="6" width="213" height="20"/>
+				<textElement>
+					<font size="14" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Laporan Barang]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="39e243a1-fff4-4641-884e-313145db61d7" x="6" y="19" width="45" height="20"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Kode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0e86c8e9-233b-4cb0-83d6-8d70e0509b49" x="68" y="19" width="164" height="20"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Nama Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="226ddf32-546d-44d1-a731-b260913910e5" x="246" y="19" width="100" height="20"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Satuan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="20d8669c-8cf9-4400-b853-8c55d0be3d7b" x="356" y="19" width="69" height="20"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Stok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="71175a22-dcf1-479e-bf68-2638acfc8fed" x="455" y="19" width="100" height="20"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Harga]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="5bc58050-2c01-4040-9d80-ef026c45ffeb" x="7" y="39" width="43" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="bf4c519e-3661-475c-bc78-2ca42f7cb97f" x="68" y="39" width="164" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="8a90594f-ea89-4ace-a537-0696c6ad3a64" x="246" y="38" width="100" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="5d52c167-3cf2-4382-832f-1d2c7b27089a" x="356" y="38" width="69" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="43809dea-c536-46f0-8b67-1533cc64092f" x="455" y="39" width="97" height="1"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement uuid="d4d16310-4a91-4f6a-9202-4e369fbac5f9" x="6" y="0" width="62" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{barang_kdbarang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8a75ad75-3924-43ad-950b-107763d1b28b" x="68" y="0" width="164" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{barang_nmbarang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8d8555f5-e271-4381-831d-97934736715c" x="246" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{barang_satuan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="02121e8d-d134-4dc9-8e28-2888ef91b811" x="356" y="0" width="69" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{barang_stok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ffe096f3-5728-4b6b-9ada-669a8898357a" x="455" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{barang_harga}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="32" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="31" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="25" splitType="Stretch"/>
+	</summary>
+</jasperReport>
